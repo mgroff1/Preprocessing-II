@@ -159,6 +159,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  margin: auto 5px auto 5px;
 }
 img {
   max-width: 100%;
@@ -416,7 +417,7 @@ img {
   position: absolute;
   right: 0px;
   width: 14vw;
-  height: 350vh;
+  height: 100vh;
   background-color: #FFFFFF;
   z-index: 100;
 }
