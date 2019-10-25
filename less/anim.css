@@ -2,18 +2,47 @@
   position: absolute;
   left: 6.5vw;
   top: 10.55vh;
-}
-.bus:hover {
+  transform-style: preserve-3d;
+  perspective: 500in;
+  perspective-origin: 500in;
   animation: drive 15s infinite;
+  z-index: 1;
 }
 @keyframes drive {
   0% {
-    left: 6.5vw;
+    left: 5.6vw;
+  }
+  25% {
+    transform: rotateY(90deg);
   }
   50% {
-    left: 56.5vw;
+    transform: scale(0.85) rotateY(180deg);
+    left: 150%;
+  }
+  75% {
+    transform: scale(0.55) rotateY(180deg);
+  }
+  90% {
+    left: -50vw;
+    transform: scale(1) rotateY(0deg);
   }
   100% {
-    left: 106.5vw;
+    left: 5.6vw;
   }
+}
+.left-fill {
+  position: absolute;
+  left: 0px;
+  width: 14vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+.right-fill {
+  position: absolute;
+  right: 0px;
+  width: 14vw;
+  height: 350vh;
+  background-color: #FFFFFF;
+  z-index: 100;
 }
